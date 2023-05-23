@@ -1,0 +1,93 @@
+.headerContainer {
+  height: 6rem;
+  border-bottom: 1px solid var(--gray-200);
+  background:  var(--gray-700);
+}
+
+.headerContent{
+    max-width: 1120px;
+    height: 6rem;
+    padding-inline-start: 0 2rem;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+
+    img{
+        cursor: pointer;
+    }
+
+    nav{
+        margin-left: 5rem;
+        height: 6rem;
+
+        a{
+            display: inline-block;
+            position: relative;
+            padding: 0 0.5;
+            height: 6rem;
+            line-height: 6rem;
+            color: var(--gray-100);
+            transition: color 0.2s;
+
+            & + a {
+                margin-left: 2rem;
+            }
+
+            &:hover{
+                color: var(--white);
+            }
+            &.active{
+                color: var(--yellow-500);
+                font-weight: bold;
+            }
+           }
+   }
+
+   
+}
+
+
+.readyButton{
+    margin-left: auto;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: var(--blue-900);
+    border: 0;
+    padding: 0 1.5rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-weight: bold;
+    transition: filter 0.2s;
+
+    &:hover{
+        filter: brightness(1.1);
+    }
+}
+// VOCÊ É UMA GOSTOSA E MARAVILHOSA   
+
+
+@media (max-width: 870px){
+    .headerContainer{
+        height: 11rem;
+        padding: 0.5 rem 0;
+    }
+
+    .headerContent{
+        display: flex;
+        flex-direction: column;
+
+        nav{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+// Quero tanto te ver de rabo pra cima 😔 e te beijar todinha de costas 
+        .readyButton{
+            display: none;
+        }
+    }
+}
