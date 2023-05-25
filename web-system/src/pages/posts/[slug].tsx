@@ -8,6 +8,10 @@ import { RichText } from "prismic-dom";
 import Head from "next/head";
 import Image from "next/image";
 
+import { ParsedUrlQuery } from "querystring";
+
+
+
 interface PostProps {
   post: {
     slug: string;
