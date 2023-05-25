@@ -11,7 +11,7 @@ export function Header(){
   return(
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <a>
+        <a href='/'>
           <Image src={logo} alt="Sujeito Programador Logo"/>
         </a>
 
